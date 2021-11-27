@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Projects - Survey Form</title>
+    <meta charset="utf-8">
+<style>
+  body {
+    background-color: #98ff98;
+    font-family: Verdana;
+    text-align: left;
+  }
+  form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 40px 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  input {
+    margin-bottom: 15px;
+  }
+
+#submit {
+
+}
+
+</style>
+<h1 id="title" align="center">Survey Form</h1>
+</head>
+<body>
+<div id-"main">
+
+
+<form id="survey-form">
+  <p> Let us know how we can improve freeCodeCamp </p>
+  <label>* Name</label>
+ <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+  <br>
+ <label id="email-label" for="email">*Email</label>
+ <input type="email" name="email" id="email" placeholder="test@gmail.com" required>
+  <br>
+  <label id="number-label" for="number">* Age</label>
+ <input type="number" name="number" id="number" placeholder="Enter roll number" min="0" max="100" required>
+  <br>
+
+  <label for="drop-down">Which option best describes your current role?</label>
+  <select name="drop-down" id="drop-down">
+    <option value="Student">Student
+    </option>
+    <option value="Lecturer">Lecturer
+    </option>
+    <option value="Director">Director
+    </option>
+    <option value="Secuirity">Secuirity
+    </option>
+  </select>
+  <br><br>
+
+    <label align="left">How likely is that you would recomend<br>freeCodeCamp to a friend?</label><br><br>
+       <input type="radio" name="course" id="science" value="Science">
+    <label for="Definitely">Definitely</label>
+    <br>
+
+       <input type="radio" name="course" id="math" value="Math">
+     <label for="Maybe">Maybe</label>
+    <br>
+
+       <input type="radio" name="course" id="art" value="Art">
+    <label for="Not sure">Not sure</label>
+
+<br>
+
+    <label>What do you like most in FCC?</label>
+    <select name="drop-down" id="drop-down">
+      <option value="Student">Select an option
+      </option>
+      <option value="Lecturer">Nothing
+      </option>
+      <option value="Director">Everything
+    </select>
+
+
+<br><br>
+
+<label align="left">Things that shpuld be improved in the future<br>(Check all thet apply):</label><br><br>
+   <input type="radio" name="things" id="science" value="Science">
+<label for="Front-end Projects">Front-end Projects</label>
+<br>
+
+   <input type="radio" name="things" id="math" value="Math">
+ <label for="Back-end Projects">Back-end Projects</label>
+<br>
+
+   <input type="radio" name="things" id="art" value="Art">
+<label for="Data visualisation">Data visualisation</label>
+<br><br>
+<input type="submit" id="submit" value="Submit">
+  </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Create Survey Form using Css Html</title>
+</head>
+<style>
+.Submit {
+  padding: 15px 30px ;
+  background-color: Blue;
+  color: White;
+  cursor: pointer;
+}
+</style>
+<body style="background-color:Lightgrey; color:Black;">
+  <form align="center">
+
+
+      <label for="name"><b>Name:</b></label>
+      <input type="text" name="name" id="name" placeholder="Enter your name"><br><br>
+  </form>
+  <form align="center">
+      <label for="email"><b>Email:</b></label>
+      <input type="email" name="email" id="email" placeholder="Enter your email address"><br><br>
+  </form>
+  <form align="center">
+      <label for="number"><b>On a scale of 1-10, how good was it?</b></label>
+      <input type="number" name="number" id="number" placeholder="Enter a number between 1 and 10" min="1" max="10" step="1"><br><br>
+  </form>
+  <form align="center">
+      <label for="action"><b>Where did it happen?</b></label>
+  <select style="background-color:Grey; color:White;" name="action" id="action">
+    <option>At home</option>
+    <option>On my commute</option>
+    <option>At work</option>
+    <option>On the street</option>
+    <option>Other</option>
+  </select><br><br>
+  </form>
+  <form align="center">
+  <label for="time"><b>At what time of a day did it happen?</b></label>
+  <input type="time" name="time" id="time"><br><br>
+  </form>
+
+  <form align="center">
+  <label for="1"><b>What emotions did you experience?<br> (Select all that apply)</b></label><br>
+
+  <input type="checkbox" id="1" name="1">
+  <label for="1"> Excited</label><br>
+  <input type="checkbox" id="2" name="2">
+  <label for="2"> Humbled</label><br>
+  <input type="checkbox" id="3" name="3">
+  <label for="3"> Elated</label><br>
+  <input type="checkbox" id="4" name="4">
+  <label for="3"> Loved</label><br>
+  <input type="checkbox" id="5" name="5">
+  <label for="3"> Enthusiastic</label><br><br>
+  </form>
+
+  <p align="center"><b>Please describe your positive expirience.</b></p>
+  <form align="center">
+  <textarea placeholder="Enter your expirience here..." rows="5" cols="30" id="tex"></textarea>
+  <br><br>
+</form>
+
+
+  <form align="center">
+      <input type="submit" class="Submit" value="Submit" >
+  </form>
+</body>
+</html>
