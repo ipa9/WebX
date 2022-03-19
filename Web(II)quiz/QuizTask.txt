@@ -1,0 +1,13 @@
+Create a Reminder Application which allows user to add notes dynamically with: 
+ 
+1. Reminder text
+2. Remind date and time (on specific hour, specific date)
+ 
+Save those Reminder values on localStorage or you can also use a file if you will create a api for it. 
+ 
+After user will be notified allow user to remove notes from the list. 
+ 
+when Remind time arrives. Notify user about his notes with popup message. 
+ 
+For frontend side you can use bootstrap, flexgrid … anything 
+For storage purposes you can use localStorage, file, even db … 
