@@ -1,0 +1,109 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 80.5%; /* Set font-size to metric (16px * .625 = 10px) */
+    color: #4d4d4d;
+    margin: 0;
+    padding: 20px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+body {
+    background: #555;
+}
+      
+.container {
+max-width: 500px;
+margin: auto;
+background: white;
+padding: 10px;
+}
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1; 
+}
+  body {
+    background: #f5f5f5;
+    color: #333333;
+  }
+  .show-btn {
+    border-color: orange;
+    color: orange;
+    background: transparent;
+  }
+  .show-btn:hover {
+    background: orange;
+    color: #333333;
+  }
+  
+  .question-card {
+    display: none;
+    position: relative;
+    background: transparent;
+    border-color: orange;
+  }
+  .feedback {
+    display: none;
+  }
+  
+  textarea {
+    border-radius: 0.25rem;
+    border-color: orange;
+  }
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    font-size: 2rem;
+    color: orange;
+    cursor: pointer;
+  }
+  .close-btn:hover {
+    color: darkgreen;
+  }
+  .submitBtn {
+    border: 0.2rem solid darkgreen;
+    color: darkgreen;
+    background: transparent;
+  }
+  .submitBtn:hover {
+    background: darkgreen;
+    color: #f5f5f5;
+  }
+  .edit-flashcard {
+    border: 0.2rem solid darkgreen;
+    color: darkgreen;
+    background: transparent;
+  }
+  .edit-flashcard:hover {
+    background: darkgreen;
+    color: #333333;
+  }
+  .delete-flashcard {
+    border: 0.2rem solid orange;
+    color: orange;
+    background: transparent;
+  }
+  .delete-flashcard:hover {
+    background: orange;
+    color: #333333;
+  }
+  .answer {
+    display: none;
+  }
+  .showItem {
+    display: block;
+  }
+
+
