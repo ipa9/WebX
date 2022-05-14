@@ -1,1 +1,9 @@
-quiz
+QUIZ task
+
+
+Create flash cards (sticky notes) where you can 
+1. create new cards
+2. edit cards
+3. Drag & drop the cards in case user wants to order them 
+
+save card information in (localstorage or Indexdb)
