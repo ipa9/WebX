@@ -1,0 +1,6 @@
+With Window.SpeechRecognition create an input div where you listen to the audio and convert it to string. 
+
+Features your app must support 
+
+1. Language change possibility  (what SpeechRecognition  supports).
+2. Swearing words config which allows to blur the swear words.
