@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Exercise 3</title>
+</head>
+<body>
+  <h1>First heading <span>first span</span>.</h1>
+  <h1>Second heading <span>second span</span>.</h1>
+  <p>First paragraph <span>third span</span>.</p>
+  <p>Second paragraph <span>fourth span</span>.</p>
+    
+    <script>
+      function myGetElementsByTagName(node, tagName) {
+        tagName = tagName.toUpperCase();
+        var hasTagName = [];
+    
+        checkChildElement(node.firstChild); 
+        return hasTagName; 
+        
+        function checkChildElement(node) { 
+          while (node) { 
+            if (node.nodeType == 1 && node.tagName) {
+              if (node.tagName === tagName) {
+                hasTagName.push(node); 
+              }
+              checkChildElement(node.firstChild); 
+            }
+            node = node.nextSibling; 
+          }
+        } 
+      }
+      
+      console.log(myGetElementsByTagName(document.body, "h1").length); 
+      // should print 2
+
+      console.log(myGetElementsByTagName(document.body, "span").length);
+      // should print 4
+
+      var para = document.querySelector("p");
+      console.log(myGetElementsByTagName(para, "span").length);
+      // should print 1 
+
+    </script>
+</body>

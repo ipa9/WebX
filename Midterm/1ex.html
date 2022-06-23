@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <textarea id="code">return "hi";</textarea>
+<button id="button">Run</button>
+<pre id="output"></pre>
+
+<script>
+  document.getElementById('button').addEventListener('click', function() {
+
+    var code = document.getElementById('code').value;  
+    var output = document.getElementById('output');
+
+    try {  
+
+      var func = new Function(code);
+      var result = func();
+      output.textContent = String(result);
+
+    } catch(err) {
+      output.textContent = String(err);
+    }
+  });
+</script>
+</body>
+</html>

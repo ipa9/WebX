@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Exercise 2</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+</style>
+
+<body>
+  <div>
+      <p><strong>UP</strong> arrow to grow in 10 percent</p>
+      <p><strong>DOWN</strong> arrow to shrink in 10 percent</p>
+      <p><strong>DO NOT</strong> go more than 60px</p>
+    <p class="balloon">🎈</p>
+
+  </div>
+
+  <script>
+      function getTheValueOfSize(val, unit) {
+	return parseInt(val.split(unit)[0]);
+}
+
+function balloon(n) {
+
+	switch (n.keyCode) {
+		case 40:
+			chSize('.balloon', 1.1, 'down');
+			break;
+		case 38:
+			chSize('.balloon', 1.1);
+			break;
+		default:
+			return;
+	}
+
+}
+
+function chSize(el, x, y) {
+	el = document.querySelector(el);
+	let elSize = window.getComputedStyle(el).fontSize;
+	let elementsValue = getTheValueOfSize(elSize, 'px');
+
+	if (y === undefined) {
+		elementsValue *= x;
+	} else elementsValue /= x;
+
+	if (elementsValue <= 60) {
+		console.log(elSize);
+		elSize = Math.ceil(elementsValue) + 'px';
+		el.style.fontSize = elSize;
+	} else replace(el);
+}
+
+
+function replace(el) {
+	el.firstChild.nodeValue = '💥';
+	document.removeEventListener('keydown', balloon, true);
+}
+
+document.addEventListener('keydown', balloon, true);
+  </script>
+
+</body>
+
+</html>
